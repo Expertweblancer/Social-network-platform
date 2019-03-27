@@ -186,6 +186,7 @@ if ($followers_alert == 0) {
 					<a href="<?php echo Wo_SeoLink('index.php?link1=create-page'); ?>" data-ajax="?link1=create-page"><?php echo $wo['lang']['create_new_page']; ?></a>
 				</li>
 			<?php } ?>
+		
 			<?php if ($wo['config']['groups'] == 1) { ?>
 				<li class="dropdown-hidden-link">
 					<a href="<?php echo Wo_SeoLink('index.php?link1=create-group'); ?>" data-ajax="?link1=create-group"><?php echo $wo['lang']['create_new_group']; ?></a>
@@ -197,19 +198,22 @@ if ($followers_alert == 0) {
 					<a href="<?php echo Wo_SeoLink('index.php?link1=pages'); ?>" data-ajax="?link1=pages"><?php echo $wo['lang']['pages']; ?></a>
 				</li>
 			<?php } ?>
-			<li>
+			<li class="dropdown-search-link">
 				<label for="menu-toggle">
 				&nbsp;&nbsp;&nbsp;&nbsp;Personal Enrichment
 
 				</label>
 				<input type="checkbox" id="menu-toggle">
 				<ul id="menu">
-					<li><a href="http://developer.enewhope.org/devotions.php">Daily Devotionals</a></li>
-					<li><a href="http://developer.enewhope.org/devotions.php">Others</a></li>		
+					<li><a href="https://enewhope.org/">Daily Devotionals</a></li>
+					<li><a href="http://developer.enewhope.org/devotions.php">Others</a></li>
+					<li><a href="https://enewhope.org/events/">Health and Wellness</a></li>	
+		
 				</ul>
 				
 					
 			</li>
+
 			<?php if ($wo['config']['classified'] == 1) { ?>
 				<li class="dropdown-search-link">
 					<a href="<?php echo Wo_SeoLink('index.php?link1=my-products'); ?>" data-ajax="?link1=my-products"><?php echo $wo['lang']['my_products']; ?></a>

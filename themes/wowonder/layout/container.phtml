@@ -455,24 +455,24 @@
       <?php if ($wo['page'] != 'get_news_feed') { ?>
       <script>
       window.addEventListener("load", function(){
-      // window.cookieconsent.initialise({
-      //   "palette": {
-      //     "popup": {
-      //       "background": "<?php echo $wo['config']['header_background'];?>",
-      //       "text": "#fff"
-      //     },
-      //     "button": {
-      //       "background": "<?php echo $wo['config']['btn_background_color'];?>"
-      //     }
-      //   },
-      //   "theme": "edgeless",
-      //   <?php if ($wo['page'] == 'welcome') {?> "position": "bottom-left", <?php } ?>
-      //   "content": {
-      //     "message": "<?php echo $wo['lang']['cookie_message']?>",
-      //     "dismiss": "<?php echo $wo['lang']['cookie_dismiss']?>",
-      //     "link": "<?php echo $wo['lang']['cookie_link']?>",
-      //     "href": "<?php echo Wo_SeoLink('index.php?link1=terms&type=privacy-policy');?>"
-      //   }
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "<?php echo $wo['config']['header_background'];?>",
+            "text": "#fff"
+          },
+          "button": {
+            "background": "<?php echo $wo['config']['btn_background_color'];?>"
+          }
+        },
+        "theme": "edgeless",
+        <?php if ($wo['page'] == 'welcome') {?> "position": "bottom-left", <?php } ?>
+        "content": {
+          "message": "<?php echo $wo['lang']['cookie_message']?>",
+          "dismiss": "<?php echo $wo['lang']['cookie_dismiss']?>",
+          "link": "<?php echo $wo['lang']['cookie_link']?>",
+          "href": "<?php echo Wo_SeoLink('index.php?link1=terms&type=privacy-policy');?>"
+        }
       })});
       </script>
       <?php } ?>

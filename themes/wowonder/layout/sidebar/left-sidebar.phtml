@@ -1,23 +1,22 @@
 <?php if ($wo['loggedin'] == true && Wo_IsMobile() == false) { ?>
 <style>
-label {
- cursor: pointer;
-}
-#menu-toggle {
- display: none; /* hide the checkbox */
-}
-#menu {
- display: none;
-}
-#menu-toggle:checked + #menu {
- display: block;
-}
-#menu li{
-	padding-left:5px;
-}
+	label {
+	 cursor: pointer;
+	}
+	#menu-toggler {
+	 display: none; /* hide the checkbox */
+	}
+	#menu {
+	 display: none;
+	}
+	#menu-toggler:checked + #menu {
+	 display: block;
+	}
+	#menu li{
+		padding-left:5px;
+	}
 </style>
- 
-<div class="left-sidebar" id="primary_nav_wrap">
+<div class="left-sidebar">
 	<ul>
 		<li>
 			<a href="<?php echo $wo['user']['url']; ?>" data-ajax="?link1=timeline&u=<?php echo $wo['user']['username'];?>">
@@ -25,20 +24,18 @@ label {
 				<?php echo $wo['lang']['my_profile'];?>
 			</a>
 		</li>
-		<li>
-			<label for="menu-toggle">
-			<i class="fa fa-pied-piper-alt" style="font-size:20px"></i> &nbsp;&nbsp;Personal Enrichment
+               <li>
+		<label for="menu-toggler">
+		<i class="fa fa-pied-piper-alt" style="font-size:20px"></i> &nbsp;&nbsp;Personal Enrichment
 
-			</label>
-			<input type="checkbox" id="menu-toggle">
-			<ul id="menu">
-				<li><a href="http://developer.enewhope.org/devotions.php"><i class="fa fa-chain" style="font-size:20px"></i> &nbsp;&nbsp;Daily Devotionals</a></li>
-				<li><a href="http://developer.enewhope.org/devotions.php"><i class="fa fa-chain-broken" style="font-size:20px"></i> &nbsp;&nbsp;Daily Devotionals</a></li>
- 				
-			</ul>
-		 
-			 
-		</li>
+		</label>
+		<input type="checkbox" id="menu-toggler">
+		<ul id="menu">
+			<li><a href="https://enewhope.org/"><i class="fa fa-chain" style="font-size:20px"></i> &nbsp;&nbsp;Daily Devotionals</a></li>
+			<li><a href="http://developer.enewhope.org/devotions.php"><i class="fa fa-chain-broken" style="font-size:20px"></i> &nbsp;&nbsp;Daily Devotionals</a></li>	
+			<li><a href="https://enewhope.org/events/"><i class="fa fa-medkit" style="font-size:20px"></i> &nbsp;&nbsp;Health and Wellness</a></li>	
+		</ul>	 
+		</li> 
 		<!--<li>
 			<a href="<?php echo Wo_SeoLink('index.php?link1=messages'); ?>" data-ajax="?link1=messages">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#03a9f4;"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
@@ -172,23 +169,6 @@ label {
 			<a href="<?php echo Wo_SeoLink('index.php?link1=movies'); ?>">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#8d73cc;"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
 				<?php echo $wo['lang']['movies'];?>
-			</a>
-		</li>
-		<!-- add -->
-		<li>
-			<a href="<?php echo Wo_SeoLink('index.php?link1=movies'); ?>">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#8d73cc;"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
-				<?php echo $wo['lang']['movies'];?>
-			</a>
-		</li>
-		<li>
-			<a href="http://school.wowonderexample.com">
-				<i class="fa fa-graduation-cap"> </i> &nbsp;&nbsp;SchoolXD
-			</a>
-		</li>
-		<li>
-			<a href="http://academy.wowonderexample.com">
-				<i class="fa fa-institution"> </i> &nbsp;&nbsp;Academy
 			</a>
 		</li>
 		<?php } ?>
